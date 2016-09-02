@@ -1,0 +1,15 @@
+Generate exe with node js
+https://github.com/jaredallard/nexe
+
+A lexical analyzer generator used by jison to js
+https://www.npmjs.com/package/jison-lex
+
+A lexical analyzer generator to java
+http://jflex.de/
+-----------------------------
+
+TRADUCCION DIRIJIDA POR LA SINTAXIS
+
+
+
+PUNTO Y COMO DE LA REGLA 3
