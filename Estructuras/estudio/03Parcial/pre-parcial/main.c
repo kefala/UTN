@@ -15,6 +15,7 @@ void sort(node**);
 void mergeList(node**, node**);
 void load(node**, node*);
 node *newNode(int, char [50], int, float);
+void createTmpList(node**, node*);
 
 void load(node** loadedProducts, node* product) {
     if (*loadedProducts == NULL) {
@@ -26,8 +27,21 @@ void load(node** loadedProducts, node* product) {
     }
 }
 
+void createTmpList(node** head, node* original) {
+	node * tmp = NULL;
+	*head = newNode(original->code, original->description, original->stock, original->price);
+	tmp = original->next;
+	(*head)->next = tmp;
+}
+
 void sort(node** list) {
-	printf("asdas\n");
+	printf("--------\n");
+	node * tmpList = NULL;
+	createTmpList(&tmpList, *list);
+	while (tmpList) {
+		printf("%d\n", tmpList->code);
+		tmpList = tmpList->next;
+	}
 }
 
 void mergeList(node** list, node** list2) {
@@ -77,12 +91,11 @@ void showList(node* list) {
 }
 
 int main() {
-	int i = 0;
 	node* loadedProducts = NULL;
 	node* bougthProducts = NULL;
 	node* product = NULL;
 	printf("----------------------------------\n");
-	printf("              asfas\n");
+	printf("        Cargo productos\n");
 	printf("----------------------------------\n\n\n\n");
 
 	/* loaded products */ 	
@@ -94,9 +107,9 @@ int main() {
 	load(&loadedProducts, product);
 	product = newNode(5, "salchecheee", 10, 15.25);
 	load(&loadedProducts, product);
+	sort(&loadedProducts);
 	showList(loadedProducts);
 
-	//sort(&loadedProducts);
 
 	printf("\n\n---------------\n\n\n");
 
@@ -107,14 +120,11 @@ int main() {
 	load(&bougthProducts, product);
 	product = newNode(5, "eeeeeeeeee", 1000, 15.25);
 	load(&bougthProducts, product);
-	showList(bougthProducts);
 	//sort(&bougthProducts);
+	showList(bougthProducts);
 
 	mergeList(&loadedProducts, &bougthProducts);
-	/*printf("\n\n---------------\n\n\n");
-	printf("\n\n---------------\n\n\n");
-	printf("\n\n---------------\n\n\n");
-	showList(loadedProducts);*/
+	//showList(loadedProducts);
 
 
 	return 0;
