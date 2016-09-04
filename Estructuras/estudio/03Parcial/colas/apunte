@@ -1,0 +1,51 @@
+Cola
+
+nodo {
+	entero
+	sig
+}
+
+1. l = []
+Llama a fn cargar
+2. [1, NULL] (primero)
+Llama a fn cargar
+3. [1, [2, NULL]]
+Llama a fn cargar
+4. [1, [2, [3, NULL]]]
+
+
+
+
+
+
+Pila
+
+nodo {
+	entero
+	sig
+}
+
+1. l = []
+Llama a fn cargar
+2. [1, NULL]
+Llama a fn cargar
+3. [2, [1, NULL]]
+Llama a fn cargar
+3. [3, [2, [1, NULL]]]
+
+1. []
+
+
+
+	nodo *nuevo,*anterior,*p;
+	nuevo=nuevonodo(y);
+	if(*x==NULL)    
+		*x = nuevo;
+	else if((*x)->dato>y) {
+        nuevo->sig=*x;
+        *x=nuevo;
+    }
+    else 
+    	insertar(&(*x)->sig,y);
+
+

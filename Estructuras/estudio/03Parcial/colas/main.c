@@ -31,10 +31,8 @@ int main () {
 
 void cargar(nodo** l, int x)
 {
-	nodo* nuevo;
-
-	if(*l == NULL)
-	{
+	if (*l == NULL) {
+		nodo* nuevo;
 		nuevo = nuevonodo(x);
 		*l=nuevo;
 	}
