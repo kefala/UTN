@@ -1,5 +1,5 @@
 progName=$1
-lastM=$(stat -c %Y $progName.c)
+lastM=$(stat -f "%Sm" -t "%s" $progName.c)
 	clear
 
 	echo ""
@@ -12,7 +12,7 @@ lastM=$(stat -c %Y $progName.c)
 	while true
 	do
 
-		if  [ $lastM -ne $(stat -c %Y $progName.c) ]
+		if  [ $lastM -ne $(stat -f "%Sm" -t "%s" $progName.c) ]
 		then
 			clear
 			echo ""
@@ -21,7 +21,7 @@ lastM=$(stat -c %Y $progName.c)
 			./$progName
 			echo ""
 			echo ""
-			lastM=$(stat -c %Y $progName.c)
+			lastM=$(stat -f "%Sm" -t "%s" $progName.c)
 		fi
 			
 
