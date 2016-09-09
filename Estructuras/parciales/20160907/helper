@@ -9,7 +9,7 @@ lastM=$(stat -c %Y $progName.c)
 	echo ""
 	echo ""
 
-	while true
+	while false
 	do
 
 		if  [ $lastM -ne $(stat -c %Y $progName.c) ]
