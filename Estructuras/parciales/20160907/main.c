@@ -14,7 +14,7 @@ node *newNode(int);
 void sumar(node*, node*, node**, int);
 
 int main() {
-	char stringNumber1[71] = {"1234"};
+	char stringNumber1[71] = {"123456"};
 	char stringNumber2[71] = {"987456"};
 	node * number1 = NULL;//pila
 	node * number2 = NULL;//pila
@@ -27,10 +27,10 @@ int main() {
 	printf("-----------------------------------------------------\n");
 	
 	printf("\nIngrese un número a sumar: ");
-	scanf("%s", stringNumber1);
+	//scanf("%s", stringNumber1);
 	printf("El número ingresado fué %s\n", stringNumber1);
 	printf("\nIngrese otro número a sumar: ");
-	scanf("%s", stringNumber2);
+	//scanf("%s", stringNumber2);
 	printf("El otro número ingresado fué %s\n", stringNumber2);
 	
 	if (stringNumber1[0] == '0' && !stringNumber1[1] && stringNumber2[0] == '0' && !stringNumber2[1]) {
