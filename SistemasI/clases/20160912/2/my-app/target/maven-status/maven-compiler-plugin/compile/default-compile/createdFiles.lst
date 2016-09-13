@@ -1,0 +1,10 @@
+com/mycompany/app/ErrorIndicator.class
+com/mycompany/app/Main.class
+com/mycompany/app/Terminal.class
+com/mycompany/app/SyntacticAnalizer.class
+com/mycompany/app/App.class
+com/mycompany/app/HeadIdentifier.class
+com/mycompany/app/LexicalAnalizer.class
+com/mycompany/app/CodeGenerator.class
+com/mycompany/app/SemanticAnalizer.class
+com/mycompany/app/Constants.class

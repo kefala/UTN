@@ -1,0 +1,19 @@
+Implementación del analisis semantico
+
+LLevar el registro de los identificadores de los simboles que se van leyendo.
+
+getCard devuelve la cadena con el nombre del identificador que voy a cagar en la table si no está definido(SEA PROCEDURE O CONST)
+
+
+	-Implementar metodo que recibe dos parametros una cadena que es el nombre del identificador y una tabla(de identificadores bin) con los identificadores cargados. 
+	-Implementar metodos para cargar identificadores bin en la tabla
+	
+
+
+Al analizador semantico le preguntamos:
+	¿El identificador que traigo del analisis lexico puede ser cargado en la tabla o no? 
+
+
+
+
+
